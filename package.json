@@ -1,0 +1,53 @@
+{
+  "name": "fdoh",
+  "version": "1.0.0",
+  "description": "Fetch DNS over HTTPS",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard *.js test/*.js",
+    "test": "ava",
+    "coverage": "nyc npm test",
+    "postcoverage": "nyc report -r html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptariche/fdoh.git"
+  },
+  "keywords": [
+    "fetch",
+    "dns",
+    "over",
+    "https",
+    "axios",
+    "plugin",
+    "fetch",
+    "addon"
+  ],
+  "author": "Peter A. Tariche",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptariche/fdoh/issues"
+  },
+  "homepage": "https://github.com/ptariche/fdoh#readme",
+  "dependencies": {
+    "dohdec": "^1.0.0",
+    "is-ip": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "axios": "^0.18.0",
+    "nyc": "^11.6.0",
+    "standard": "^11.0.1"
+  },
+  "nyc": {
+    "exclude": [
+      "examples",
+      "test"
+    ]
+  },
+  "ava": {
+    "files": [
+      "test/*.ava.js"
+    ]
+  }
+}
