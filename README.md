@@ -6,7 +6,7 @@
 
 ### Fetch with DNS over HTTPS
 
-The point of this utility is to be able to utilize node-fetch with your DNS queries running over HTTPS from Cloudflare [1.1.1.1](https://1.1.1.1) or Google DNS over HTTPS.
+The point of this utility is to be able to utilize fetch with your DNS queries running over HTTPS from Cloudflare [1.1.1.1](https://1.1.1.1) or Google DNS over HTTPS.
 
 ### Fetch Example 
 - [Link](./examples/fetch.js)
@@ -35,8 +35,3 @@ npm install --save fdoh
 				+ uri {String}
 				+ headers {Object}
 
-                                                            
-
-### Dependencies 
-- [dohdec](https://github.com/hildjj/dohdec)
-- [is-ip](https://github.com/sindresorhus/is-ip)
