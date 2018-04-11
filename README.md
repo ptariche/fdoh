@@ -29,7 +29,7 @@ npm install --save fdoh
 		+ **responseWithConfig** {Boolean} (Utilized to return a basic config for middleware or interceptor libraries)
 
 	* Returns {Optional Object or Function-Object}
-		+ if responseWithConfig is not passed, [Node-Fetch](https://github.com/bitinn/node-fetch) is returned
+		+ if responseWithConfig is not passed, Fetch or [Node-Fetch](https://github.com/bitinn/node-fetch) is returned
 		+ if responseWithConfig is set to true, an object is returned
 			+ *Object*
 				+ uri {String}
